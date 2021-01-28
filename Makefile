@@ -10,10 +10,10 @@
 #
 .SUFFIXES : .ml .mli .cmo .cmi .cmx .mly
 
-INSTALL_DIR=/usr/local
-INSTALL_BIN_DIR=$(INSTALL_DIR)/bin
-INSTALL_LIB_DIR=$(INSTALL_DIR)/lib/haxe
-INSTALL_STD_DIR=$(INSTALL_DIR)/share/haxe/std
+PREFIX?=/usr/local
+INSTALL_BIN_DIR=$(PREFIX)/bin
+INSTALL_LIB_DIR=$(PREFIX)/lib/haxe
+INSTALL_STD_DIR=$(PREFIX)/share/haxe/std
 PACKAGE_OUT_DIR=out
 INSTALLER_TMP_DIR=installer
 PACKAGE_SRC_EXTENSION=.tar.gz
